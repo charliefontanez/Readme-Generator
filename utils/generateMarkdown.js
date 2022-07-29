@@ -16,6 +16,33 @@ function renderLicenseSection(license) {
   return "";
 }
 
+var generateTableOfContents = () => {
+  // if (!tableOfContents) {
+  //   return '';
+  // }
+    var list;
+    for (let i = 0; i < 10; i++) {
+      list = "-\n";
+    }
+    return `
+    ## Table Of Contents
+    ${() => {
+      var list;
+      for (let i = 0; i < 10; i++) {
+        list = "-\n";
+      }
+      return list;
+    }}
+    - license
+    -
+    -
+    -
+
+
+    `
+
+}
+
 // TODO: Create a function to generate markdown for README
 var generateMarkdown = data => {
   return `
@@ -26,6 +53,9 @@ var generateMarkdown = data => {
 
   ${data.description}
 
+  ${generateTableOfContents()}
+
+  ### Image Goes Here
 
   ${renderLicenseSection(true)}
 

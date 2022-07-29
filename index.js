@@ -5,7 +5,8 @@ var { renderLicenseBadge, renderLicenseLink, renderLicenseSection, generateMarkd
 
 // TODO: Create an array of questions for user input
 const questions = [
-  "What is the title of your project? (required)"
+  "What is the title of your project? (required)",
+  
 ];
 
 // TODO: Create a function to write README file
